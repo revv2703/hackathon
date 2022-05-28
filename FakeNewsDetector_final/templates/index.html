@@ -20,25 +20,15 @@
             })
             })
         })
-        function myFunction(){
-            let input = {'input':x}
-            //const input = document.getElementById("input");
-            const s = JSON.stringify(input);
-            console.log(s); // Prints the variables to console window, which are in the JSON format
-            window.alert(s);
-            $.ajax({
-                url:"/index.html",
-                type:"POST",
-                contentType: "application/json",
-                data: JSON.stringify(s)});
-        }        
-        
+
     </script>
     <h2 id="h2">What's the news??</h2>
     <h3 id="h3"></h3>
     <center>
-    <input type="text" id="input" class="w3-input w3-border">
-    <button type="submit" />
+        <form>
+            <input type="text" id="input" name="input">
+            <button type="submit">Submit</button>
+        </form>
     </center>
     
 </body>
